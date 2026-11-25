@@ -1,0 +1,11 @@
+===== The Relational Model =====
+A relational database stores data in tables called relations. Each row of a table is called a tuple, and each column is called an attribute. A schema describes the structure of a relation, including the names and types of its attributes. The relational model is popular because tables are simple to understand and query.
+
+===== Keys and Integrity =====
+A primary key is an attribute, or a set of attributes, that uniquely identifies each tuple in a relation. A foreign key is an attribute in one relation that refers to the primary key of another relation. Foreign keys enforce referential integrity, which means that a reference can never point to a row that does not exist. A candidate key is any minimal set of attributes that could serve as the primary key.
+
+===== Normalization =====
+Normalization is the process of organizing a schema to reduce redundancy and avoid update anomalies. A table is in first normal form when every attribute holds a single atomic value. A table is in second normal form when it is in first normal form and no non-key attribute depends on only part of the primary key. Third normal form removes transitive dependencies, where a non-key attribute depends on another non-key attribute. Higher normal forms reduce redundancy but can force queries to join many tables, which may slow them down.
+
+===== Transactions =====
+A transaction is a sequence of database operations that is treated as a single logical unit of work. Transactions follow the ACID properties: atomicity, consistency, isolation, and durability. Atomicity means that either all operations of a transaction happen or none of them do. Isolation means that concurrent transactions do not see each other's partial changes. A database system uses locking to enforce isolation. Durability means that committed changes survive a system crash because they are written to a log on disk.

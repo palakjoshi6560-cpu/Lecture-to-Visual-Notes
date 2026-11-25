@@ -1,0 +1,143 @@
+{
+  "name": "dbms_core_asr",
+  "required_anchor": "\\bdatabase\\s+management\\s+system\\b",
+  "supporting_anchors": [
+    "\\b(?:database|dbms|relational\\s+tables?)\\b",
+    "\\b(?:primary|foreign|candidate)\\s+keys?\\b",
+    "\\bnormalization\\b"
+  ],
+  "min_supporting": 1,
+  "word_rules": [],
+  "phrase_rules": [
+    {
+      "id": "dbms.manage_data",
+      "pattern": "\\bmanage\\s+at\\s+data\\b",
+      "replacement": "manage data"
+    },
+    {
+      "id": "dbms.another_table",
+      "pattern": "\\ba\\s+other\\s+table\\b",
+      "replacement": "another table"
+    },
+    {
+      "id": "dbms.non_key_attributes",
+      "pattern": "\\bunkey\\s+attributes?\\b",
+      "replacement": "non-key attributes"
+    },
+    {
+      "id": "dbms.order_by",
+      "pattern": "\\border\\s+i\\b",
+      "replacement": "ORDER BY"
+    },
+    {
+      "id": "dbms.table_schema",
+      "pattern": "\\btables\\s+schema\\b",
+      "replacement": "table schema"
+    },
+    {
+      "id": "dbms.mammals_include",
+      "pattern": "\\bmammals\\s+include\\b",
+      "replacement": "DBMS includes"
+    },
+    {
+      "id": "dbms.postgresql",
+      "pattern": "\\bpostcurSQL\\b",
+      "replacement": "PostgreSQL"
+    },
+    {
+      "id": "dbms.mysql",
+      "pattern": "\\bmySQL\\b",
+      "replacement": "MySQL"
+    },
+    {
+      "id": "dbms.good_table",
+      "pattern": "\\bGodtable\\b",
+      "replacement": "Good table"
+    },
+    {
+      "id": "dbms.reference_it",
+      "pattern": "\\bReference\\s+M\\b",
+      "replacement": "reference it"
+    },
+    {
+      "id": "dbms.insert_adds_record",
+      "pattern": "\\binsert\\s+ads\\s+or\\s+record\\b",
+      "replacement": "insert adds a record"
+    },
+    {
+      "id": "dbms.remove_unkey_filler",
+      "pattern": "\\bUnkey,\\s*(?=for instance\\b)",
+      "replacement": ""
+    },
+    {
+      "id": "dbms.examination_results",
+      "pattern": "\\belimination\\s+results\\b",
+      "replacement": "examination results"
+    },
+    {
+      "id": "dbms.student_store_clause_boundary",
+      "pattern": "student\\s+Store\\s+departments",
+      "replacement": "student, store departments"
+    },
+    {
+      "id": "dbms.animation_results",
+      "pattern": "\\banimation\\s+results\\b",
+      "replacement": "examination results"
+    },
+    {
+      "id": "dbms.malformed_non_key_attribute",
+      "pattern": "\\ban\\s+key\\s+attribute\\s+on\\s+a\\s+key\\b",
+      "replacement": "non-key attributes"
+    },
+    {
+      "id": "dbms.isolation_durability_boundary",
+      "pattern": "\\bone\\s+another\\s+durability\\s+means\\b",
+      "replacement": "one another. Durability means"
+    },
+    {
+      "id": "dbms.consistency_isolation_boundary",
+      "pattern": "\\bconstraints\\s+isolation\\s+controls\\b",
+      "replacement": "constraints. Isolation controls"
+    },
+    {
+      "id": "dbms.left_join_boundary",
+      "pattern": "\\bavailable\\s+joins\\s+commonly\\b",
+      "replacement": "available. Joins commonly"
+    },
+    {
+      "id": "dbms.where_clause_boundary",
+      "pattern": "\\brecords\\s+where\\s+clause\\b",
+      "replacement": "records. WHERE clause"
+    },
+    {
+      "id": "dbms.database_summary_article",
+      "pattern": "\\bto\\s+summarize,\\s+database\\s+stores\\s+organized\\s+information\\b",
+      "replacement": "To summarize, a database stores organized information"
+    },
+    {
+      "id": "dbms_transactions_summary_boundary",
+      "pattern": "\\bupdates\\s+these\\s+concepts\\s+work\\s+together\\b",
+      "replacement": "updates. These concepts work together"
+    },
+    {
+      "id": "dbms.summary_dbms_article",
+      "pattern": "\\bdatabase\\s+management\\s+system\\s+controls\\s+access\\s+to\\s+it\\b",
+      "replacement": "A database management system controls access to it"
+    },
+    {
+      "id": "dbms.summary_relational_table_boundary",
+      "pattern": "\\brecords,\\s*keys\\s+connect\\s+related\\s+tables\\b",
+      "replacement": "records. Keys connect related tables"
+    },
+    {
+      "id": "dbms.definition_unnecessary_comma",
+      "pattern": "\\bpreserves\\s+database\\s+rules,\\s+and\\s+constraints\\b",
+      "replacement": "preserves database rules and constraints"
+    },
+    {
+      "id": "dbms.summary_sql_grammar",
+      "pattern": "\\bSQL\\s+queries,\\s+and\\s+changes\\s+data\\b",
+      "replacement": "SQL queries and changes data"
+    }
+  ]
+}

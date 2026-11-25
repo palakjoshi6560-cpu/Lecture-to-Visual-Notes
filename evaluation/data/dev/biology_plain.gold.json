@@ -1,0 +1,173 @@
+{
+ "name": "biology_plain",
+ "split": "dev",
+ "domain": "science (biology)",
+ "has_headings": false,
+ "noisy": false,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator.",
+ "topic_starts": [
+  "Energy enters most ecosystems",
+  "Cells release the energy stored in glucose",
+  "ATP is the main energy currency"
+ ],
+ "concepts": [
+  {
+   "term": "photosynthesis",
+   "aliases": []
+  },
+  {
+   "term": "chloroplast",
+   "aliases": []
+  },
+  {
+   "term": "chlorophyll",
+   "aliases": []
+  },
+  {
+   "term": "light reactions",
+   "aliases": []
+  },
+  {
+   "term": "thylakoid membrane",
+   "aliases": []
+  },
+  {
+   "term": "ATP",
+   "aliases": []
+  },
+  {
+   "term": "NADPH",
+   "aliases": []
+  },
+  {
+   "term": "Calvin cycle",
+   "aliases": []
+  },
+  {
+   "term": "glucose",
+   "aliases": []
+  },
+  {
+   "term": "cellular respiration",
+   "aliases": []
+  },
+  {
+   "term": "mitochondrion",
+   "aliases": []
+  },
+  {
+   "term": "glycolysis",
+   "aliases": []
+  },
+  {
+   "term": "pyruvate",
+   "aliases": []
+  },
+  {
+   "term": "citric acid cycle",
+   "aliases": []
+  },
+  {
+   "term": "electron transport chain",
+   "aliases": []
+  },
+  {
+   "term": "enzyme",
+   "aliases": []
+  },
+  {
+   "term": "activation energy",
+   "aliases": []
+  },
+  {
+   "term": "substrate",
+   "aliases": []
+  },
+  {
+   "term": "active site",
+   "aliases": []
+  }
+ ],
+ "definitions": [
+  {
+   "term": "chloroplast",
+   "keywords": [
+    "organelle",
+    "chlorophyll"
+   ]
+  },
+  {
+   "term": "mitochondrion",
+   "keywords": [
+    "powerhouse",
+    "cell"
+   ]
+  },
+  {
+   "term": "glycolysis",
+   "keywords": [
+    "first",
+    "stage",
+    "respiration"
+   ]
+  },
+  {
+   "term": "ATP",
+   "keywords": [
+    "main",
+    "energy",
+    "currency"
+   ]
+  },
+  {
+   "term": "enzyme",
+   "keywords": [
+    "proteins",
+    "speed",
+    "reactions"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "photosynthesis",
+   "target": "chloroplast",
+   "type": "occurs_in"
+  },
+  {
+   "source": "light reactions",
+   "target": "ATP",
+   "type": "produces"
+  },
+  {
+   "source": "Calvin cycle",
+   "target": "ATP",
+   "type": "uses"
+  },
+  {
+   "source": "cellular respiration",
+   "target": "mitochondrion",
+   "type": "occurs_in"
+  },
+  {
+   "source": "glycolysis",
+   "target": "glucose",
+   "type": "splits"
+  },
+  {
+   "source": "electron transport chain",
+   "target": "ATP",
+   "type": "produces"
+  },
+  {
+   "source": "enzyme",
+   "target": "activation energy",
+   "type": "lowers"
+  },
+  {
+   "source": "enzyme",
+   "target": "substrate",
+   "type": "binds"
+  }
+ ]
+}

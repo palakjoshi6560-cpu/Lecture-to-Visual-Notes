@@ -1,0 +1,30 @@
+Hello everyone. In this lecture, we will learn the fundamentals of a database management system, often abbreviated as dbms.
+We will cover databases, relational tables, keys, normalization, structured query language, and transactions These ideas help applications or information correctly and retrieve it efficiently.
+A database is an organized collection of related data For example, a university may store student details, course information, faculty records,.
+and elimination results in a database A database management system is software used to create, read, update, and manage data.
+And mammals include mySQL, postcurSQL, and Oracle database The database contains the data, the management system provides tools and rules for working with it.
+In a relational database, information is arranged in tables A table contains rows and columns Each row represents one record, and each column represents an attribute.
+A student table might contain student ID, name, email address, and department ID The table schema describes its columns and the kinds of values they can store.
+keys help identify records and connect tables A primary key uniquely identifies each row It must be unique and cannot be held.
+A foreign key refers to a key in another table, creating a relationship between the two tables For example, department ID in the student table can reference department ID in a department table.
+This connection helps maintain referential integrity A candidate key is a minimal set of attributes that can uniquely identify a record.
+One candidate key is chosen as the primary key Other candidate keys are called alternate keys A composite key uses two or more columns together.
+In an enrollment table, student ID, and course ID may form a composite key Because a student can enroll in many courses, and a course can have many students.
+Next, let us discuss normalization Normalization organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies.
+First normal form requires each field to contain a single value rather than repeating list Second normal form requires first normal form.
+and removes partial dependencies on part of a composite candidate key Third normal form requires second normal form, and removes transitive dependencies of non-key attributes.
+Unkey, for instance, instead of repeating a department name for every student Store departments in a separate department table.
+and reference M using department ID This reduces duplicated data, and makes updates more consistent When related information is needed from separate tables, SQL joins can combine the matching rows.
+Structured query language, or SQL is used to query and modify relational data The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records.
+where clause filters rows according to a condition, while ORDER BY sort the results An inner join returns rows with matching values in both tables.
+A left join returns every row from the left table, and includes matching information from the right table when available.
+joins commonly use primary key and foreign key relationships A transaction is a logical unit of database work.
+Imagine transferring money between two bank accounts One operation subtracts money from the sender, and another adds it to the receiver.
+If only one operation succeeds, the records become inconsistent A transaction groups these operations so they can be handled together.
+Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability Atomicity means all operations in the transaction happen, or none of them do.
+Consistency means the transaction preserves database rules, and constraints Isolation controls how concurrent transactions affect one another Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees.
+Commit confirms a transaction, while rollback cancels and committed changes Database systems also use locks and other concurrency control techniques.
+To coordinate simultaneous access and protect shared data To summarize, database stores organized information Database management system controls access to it.
+Relational tables organize records, keys connect related tables Normalization reduces redundancy, SQL queries, and changes data And transactions protect reliable updates.
+These concepts work together Godtable design makes data consistent Keys establish relationships, joins retrieve related information, and transaction properties help.
+Preserve correctness when failures or concurrent operations occur.

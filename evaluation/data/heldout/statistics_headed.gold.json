@@ -1,0 +1,205 @@
+{
+ "name": "statistics_headed",
+ "split": "heldout",
+ "domain": "mathematics/statistics",
+ "has_headings": true,
+ "noisy": false,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator.",
+ "topics_from_headings": true,
+ "concepts": [
+  {
+   "term": "population",
+   "aliases": []
+  },
+  {
+   "term": "sample",
+   "aliases": []
+  },
+  {
+   "term": "parameter",
+   "aliases": []
+  },
+  {
+   "term": "statistic",
+   "aliases": []
+  },
+  {
+   "term": "random sampling",
+   "aliases": []
+  },
+  {
+   "term": "bias",
+   "aliases": []
+  },
+  {
+   "term": "sampling distribution",
+   "aliases": []
+  },
+  {
+   "term": "central limit theorem",
+   "aliases": []
+  },
+  {
+   "term": "normal distribution",
+   "aliases": []
+  },
+  {
+   "term": "sample mean",
+   "aliases": []
+  },
+  {
+   "term": "standard error",
+   "aliases": []
+  },
+  {
+   "term": "sample size",
+   "aliases": []
+  },
+  {
+   "term": "hypothesis test",
+   "aliases": []
+  },
+  {
+   "term": "null hypothesis",
+   "aliases": []
+  },
+  {
+   "term": "alternative hypothesis",
+   "aliases": []
+  },
+  {
+   "term": "p-value",
+   "aliases": []
+  },
+  {
+   "term": "significance level",
+   "aliases": []
+  },
+  {
+   "term": "type I error",
+   "aliases": []
+  },
+  {
+   "term": "type II error",
+   "aliases": []
+  },
+  {
+   "term": "confidence interval",
+   "aliases": []
+  },
+  {
+   "term": "margin of error",
+   "aliases": []
+  }
+ ],
+ "definitions": [
+  {
+   "term": "population",
+   "keywords": [
+    "complete",
+    "set",
+    "individuals"
+   ]
+  },
+  {
+   "term": "sample",
+   "keywords": [
+    "smaller",
+    "subset",
+    "observe"
+   ]
+  },
+  {
+   "term": "parameter",
+   "keywords": [
+    "numerical",
+    "summary",
+    "population"
+   ]
+  },
+  {
+   "term": "statistic",
+   "keywords": [
+    "numerical",
+    "summary",
+    "sample"
+   ]
+  },
+  {
+   "term": "standard error",
+   "keywords": [
+    "spread",
+    "sampling",
+    "distribution"
+   ]
+  },
+  {
+   "term": "p-value",
+   "keywords": [
+    "probability",
+    "extreme",
+    "null"
+   ]
+  },
+  {
+   "term": "null hypothesis",
+   "keywords": [
+    "no",
+    "effect",
+    "difference"
+   ]
+  },
+  {
+   "term": "confidence interval",
+   "keywords": [
+    "range",
+    "plausible",
+    "values"
+   ]
+  },
+  {
+   "term": "margin of error",
+   "keywords": [
+    "half",
+    "width"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "statistic",
+   "target": "parameter",
+   "type": "estimates"
+  },
+  {
+   "source": "random sampling",
+   "target": "bias",
+   "type": "reduces"
+  },
+  {
+   "source": "sample size",
+   "target": "standard error",
+   "type": "reduces"
+  },
+  {
+   "source": "hypothesis test",
+   "target": "null hypothesis",
+   "type": "compares"
+  },
+  {
+   "source": "hypothesis test",
+   "target": "alternative hypothesis",
+   "type": "compares"
+  },
+  {
+   "source": "sample size",
+   "target": "confidence interval",
+   "type": "narrows"
+  },
+  {
+   "source": "sampling distribution",
+   "target": "normal distribution",
+   "type": "approaches"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "name": "history_plain",
+ "split": "heldout",
+ "domain": "history (non-technical)",
+ "has_headings": false,
+ "noisy": false,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator.",
+ "topic_starts": [
+  "Several conditions made Britain",
+  "The key technologies came first",
+  "Industrialization changed society"
+ ],
+ "concepts": [
+  {
+   "term": "Industrial Revolution",
+   "aliases": []
+  },
+  {
+   "term": "Agricultural Revolution",
+   "aliases": []
+  },
+  {
+   "term": "labor force",
+   "aliases": []
+  },
+  {
+   "term": "coal",
+   "aliases": []
+  },
+  {
+   "term": "colonies",
+   "aliases": []
+  },
+  {
+   "term": "banking system",
+   "aliases": []
+  },
+  {
+   "term": "textile industry",
+   "aliases": []
+  },
+  {
+   "term": "spinning jenny",
+   "aliases": []
+  },
+  {
+   "term": "steam engine",
+   "aliases": []
+  },
+  {
+   "term": "railway network",
+   "aliases": []
+  },
+  {
+   "term": "urbanization",
+   "aliases": []
+  },
+  {
+   "term": "trade unions",
+   "aliases": []
+  },
+  {
+   "term": "Factory Acts",
+   "aliases": []
+  },
+  {
+   "term": "middle class",
+   "aliases": []
+  },
+  {
+   "term": "working class",
+   "aliases": []
+  },
+  {
+   "term": "factories",
+   "aliases": []
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Industrial Revolution",
+   "keywords": [
+    "period",
+    "production",
+    "machines"
+   ]
+  },
+  {
+   "term": "spinning jenny",
+   "keywords": [
+    "one",
+    "worker",
+    "spin",
+    "threads"
+   ]
+  },
+  {
+   "term": "trade unions",
+   "keywords": [
+    "campaigned",
+    "pay",
+    "workplaces"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Agricultural Revolution",
+   "target": "labor force",
+   "type": "leads_to"
+  },
+  {
+   "source": "steam engine",
+   "target": "factories",
+   "type": "frees"
+  },
+  {
+   "source": "Factory Acts",
+   "target": "working hours",
+   "type": "limits"
+  },
+  {
+   "source": "urbanization",
+   "target": "crowded cities",
+   "type": "produces"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+===== Populations and Samples =====
+A population is the complete set of individuals or measurements that we want to understand. A sample is a smaller subset that we actually observe. A parameter is a numerical summary of a population, while a statistic is a numerical summary of a sample. We use statistics to estimate parameters. Random sampling gives every member of the population an equal chance of selection, which reduces bias.
+
+===== The Central Limit Theorem =====
+The sampling distribution of a statistic describes how that statistic varies from sample to sample. The central limit theorem states that the sampling distribution of the sample mean approaches a normal distribution as the sample size grows, whatever the shape of the population. The standard error measures the spread of the sampling distribution and equals the population standard deviation divided by the square root of the sample size. A larger sample size therefore reduces the standard error.
+
+===== Hypothesis Testing =====
+A hypothesis test compares a null hypothesis with an alternative hypothesis. The null hypothesis states that there is no effect or no difference. The p-value is the probability of observing data at least as extreme as ours if the null hypothesis is true. If the p-value is smaller than the significance level, we reject the null hypothesis. A Type I error occurs when we reject a true null hypothesis. A Type II error occurs when we fail to reject a false null hypothesis.
+
+===== Confidence Intervals =====
+A confidence interval gives a range of plausible values for a parameter. A 95 percent confidence interval is built so that 95 percent of such intervals would contain the true parameter over repeated sampling. The margin of error is half the width of the interval. A larger sample size produces a narrower confidence interval.

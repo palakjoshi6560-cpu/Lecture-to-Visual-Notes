@@ -1,0 +1,41 @@
+Good morning, everyone.
+Today we are going to discuss the operating system, which is one of the most important components of a computer system.
+We will learn about processes, threads, CPU scheduling, memory management, virtual memory and synchronization.
+We will also understand how these concepts work together when we run applications on our computer.
+Let us begin with the basic definition.
+An operating system is a system software that acts as an intermediary between the user application programs and computer hardware.
+It manages resources such as the CPU main memory, storage devices and input output devices.
+Example of operating systems include Windows, Linux, Mac OS and Android.
+The main purpose of an operating system is to make computer resources convenient, efficient and secure to use.
+For example, when you open a web browser, play a video and download a file at the same time.
+The operating system coordinates these activities and distributes resources among the running applications.
+Now, let us understand the concept of a process.
+A process is a program that is currently executing.
+A program stored on a disk is passive.
+Whereas, process is active because its inference structure are being executed by the CPU.
+Every process has information associated with it.
+Such as its process identifier, execution state, CPU registers and memory information.
+The operating system stores important process related information in a data structure called process control block or PCB.
+A process may be in the new, ready, running, waiting or terminated state.
+A ready process is waiting for CPU time.
+While a waiting process is waiting for an event such as the completion of an input output operation.
+When the operating system stops one process and starts executing another, a context switch occurs.
+During a context switch, the operating system saves the execution state of the current process and re-stores the state of the next process.
+Context switching supports multitasking, although it also introduces overhead because the CPU spends time switching between processes instead of executing their instructions.
+Next, let us discuss CPU scheduling.
+CPU scheduling is the process of selecting a ready process for execution.
+The first comes first of algorithm executes processes in the order in which they arrive.
+Shortest Job First the process with the shortest expected CPU burst, round robin, assigned each process of fixed time quantum and then moves to the next ready process.
+Shaddling algorithm are evaluated using cried area such as waiting time, turnaround time response time, CPU utilization.
+Round robin is commonly associated with interactive systems because it provides processes with regular opportunities to execute.
+However, choosing an appropriate time quantum is important.
+If the time quantum is too small, context switching overhead may increase.
+If it is too large, round robin may behave similarly to first come first of schedule them.
+Now, let us move to the memory management.
+The operating system allocates memory to processes and protects one process from accessing another processes private memory without permission.
+One important technique is paging.
+In paging logical memory is divided into fixed size blocks called pages, while physical memory is divided into blocks called frames.
+Page table maps, virtual pages, two physical frames.
+A translation look aside buffer or TLB stores recently used address translations to speed up memory access.
+For required pages not currently available in physical memory or page fault occurs.
+The operating system may need to load that page from secondary storage before execution can continue.

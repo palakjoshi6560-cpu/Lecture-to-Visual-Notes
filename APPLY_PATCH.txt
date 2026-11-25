@@ -1,0 +1,8 @@
+Apply this patch to the existing project root.
+1. Extract the ZIP.
+2. Copy/replace static/app.js and static/style.css in the project.
+3. Restart Flask (Ctrl+C, then python app.py).
+4. Hard-refresh the browser with Ctrl+F5.
+
+Concept terms are now emphasized with bold accent-colored text, not yellow background highlighting.
+No Python dependencies or project data are changed.

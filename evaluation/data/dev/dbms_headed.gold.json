@@ -1,0 +1,213 @@
+{
+ "name": "dbms_headed",
+ "split": "dev",
+ "domain": "computer science (databases)",
+ "has_headings": true,
+ "noisy": false,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator.",
+ "topics_from_headings": true,
+ "concepts": [
+  {
+   "term": "relation",
+   "aliases": []
+  },
+  {
+   "term": "tuple",
+   "aliases": []
+  },
+  {
+   "term": "attribute",
+   "aliases": []
+  },
+  {
+   "term": "schema",
+   "aliases": []
+  },
+  {
+   "term": "primary key",
+   "aliases": []
+  },
+  {
+   "term": "foreign key",
+   "aliases": []
+  },
+  {
+   "term": "referential integrity",
+   "aliases": []
+  },
+  {
+   "term": "candidate key",
+   "aliases": []
+  },
+  {
+   "term": "normalization",
+   "aliases": []
+  },
+  {
+   "term": "redundancy",
+   "aliases": []
+  },
+  {
+   "term": "update anomaly",
+   "aliases": []
+  },
+  {
+   "term": "first normal form",
+   "aliases": []
+  },
+  {
+   "term": "second normal form",
+   "aliases": []
+  },
+  {
+   "term": "third normal form",
+   "aliases": []
+  },
+  {
+   "term": "transitive dependency",
+   "aliases": []
+  },
+  {
+   "term": "transaction",
+   "aliases": []
+  },
+  {
+   "term": "ACID",
+   "aliases": []
+  },
+  {
+   "term": "atomicity",
+   "aliases": []
+  },
+  {
+   "term": "isolation",
+   "aliases": []
+  },
+  {
+   "term": "durability",
+   "aliases": []
+  },
+  {
+   "term": "locking",
+   "aliases": []
+  }
+ ],
+ "definitions": [
+  {
+   "term": "tuple",
+   "keywords": [
+    "row"
+   ]
+  },
+  {
+   "term": "attribute",
+   "keywords": [
+    "column"
+   ]
+  },
+  {
+   "term": "schema",
+   "keywords": [
+    "structure",
+    "relation"
+   ]
+  },
+  {
+   "term": "primary key",
+   "keywords": [
+    "uniquely",
+    "identifies",
+    "tuple"
+   ]
+  },
+  {
+   "term": "foreign key",
+   "keywords": [
+    "refers",
+    "primary key",
+    "another"
+   ]
+  },
+  {
+   "term": "referential integrity",
+   "keywords": [
+    "reference",
+    "point",
+    "row",
+    "exist"
+   ]
+  },
+  {
+   "term": "candidate key",
+   "keywords": [
+    "minimal",
+    "attributes"
+   ]
+  },
+  {
+   "term": "normalization",
+   "keywords": [
+    "organizing",
+    "schema",
+    "redundancy"
+   ]
+  },
+  {
+   "term": "transaction",
+   "keywords": [
+    "single",
+    "logical",
+    "unit",
+    "work"
+   ]
+  },
+  {
+   "term": "atomicity",
+   "keywords": [
+    "all",
+    "operations",
+    "none"
+   ]
+  },
+  {
+   "term": "isolation",
+   "keywords": [
+    "concurrent",
+    "partial",
+    "changes"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "foreign key",
+   "target": "primary key",
+   "type": "refers_to"
+  },
+  {
+   "source": "foreign key",
+   "target": "referential integrity",
+   "type": "enforces"
+  },
+  {
+   "source": "normalization",
+   "target": "redundancy",
+   "type": "reduces"
+  },
+  {
+   "source": "third normal form",
+   "target": "transitive dependency",
+   "type": "removes"
+  },
+  {
+   "source": "locking",
+   "target": "isolation",
+   "type": "enforces"
+  },
+  {
+   "source": "transaction",
+   "target": "ACID",
+   "type": "follows"
+  }
+ ]
+}

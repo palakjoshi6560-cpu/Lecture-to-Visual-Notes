@@ -1,0 +1,27 @@
+{
+  "name": "dbms_normalization",
+  "required_anchor": "\\bnormalization\\b",
+  "supporting_anchors": [
+    "\\bsecond\\s+normal\\s+form\\b",
+    "\\b(?:database|dbms|relational tables?)\\b"
+  ],
+  "min_supporting": 1,
+  "word_rules": [],
+  "phrase_rules": [
+    {
+      "id": "dbms.third_normal_form",
+      "pattern": "\\bthird\\s*,\\s*normal\\s+form\\b",
+      "replacement": "Third Normal Form"
+    },
+    {
+    "id": "dbms.first_normal_form",
+    "pattern": "\\bfirst\\s*,\\s*normal\\s+form\\b",
+    "replacement": "First Normal Form"
+  },
+  {
+    "id": "dbms.second_normal_form",
+    "pattern": "\\bsecond\\s*,\\s*normal\\s+form\\b",
+    "replacement": "Second Normal Form"
+  }
+  ]
+}

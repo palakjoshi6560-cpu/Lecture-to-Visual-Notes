@@ -1,0 +1,35 @@
+
+{
+  "name": "os_process_control_block",
+  "required_anchor": "\\b(?:process(?:es)?|process\\s+control\\s+block|pcb|pcv|pce|pc)\\b",
+  "supporting_anchors": [
+    "\\boperating\\s+system\\b",
+    "\\bprocess(?:es)?\\b",
+    "\\b(?:scheduling|scheduler|context\\s+switching|thread(?:s)?)\\b"
+  ],
+  "min_supporting": 2,
+  "word_rules": [
+    {
+      "id": "os.process_control_block_acronym",
+      "pattern": "\\b(?:PCV|PCE|PC)\\b",
+      "replacement": "PCB"
+    },
+    {
+      "id": "os.threads_as_threats",
+      "pattern": "\\bthreats\\b",
+      "replacement": "threads"
+    }
+  ],
+  "phrase_rules": [
+    {
+      "id": "os.context_switching_phrase",
+      "pattern": "\\b(?:contacts|contact)\\s+switching\\b",
+      "replacement": "Context switching"
+    },
+    {
+      "id": "os.shortest_job_first_phrase",
+      "pattern": "\\bshortage\\s+of\\s+first\\s+selects\\b",
+      "replacement": "Shortest Job First"
+    }
+  ]
+}

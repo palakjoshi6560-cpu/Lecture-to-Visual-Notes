@@ -1,0 +1,36 @@
+{
+  "name": "dbms_acid",
+  "required_anchor": "\\btransactions?\\b",
+  "supporting_anchors": [
+    "\\b(?:database|dbms|relational tables?)\\b",
+    "\\bconsistency\\b",
+    "\\bisolation\\b",
+    "\\bcommits?\\b",
+    "\\bacid\\b"
+  ],
+  "min_supporting": 2,
+  "word_rules": [
+    {
+      "id": "dbms.atomicity",
+      "pattern": "\\b(?:adomicity|admissity|admissivity|ademisity)\\b",
+      "replacement": "Atomicity"
+    },
+    {
+      "id": "dbms.durability",
+      "pattern": "\\b(?:doorability|derivability)\\b",
+      "replacement": "Durability"
+    },
+    {
+      "id": "dbms.atomicity_optimicity",
+      "pattern": "\\boptimicity\\b",
+      "replacement": "Atomicity"
+    }
+  ],
+  "phrase_rules": [
+    {
+      "id": "dbms.rollback_uncommitted_changes",
+      "pattern": "\\brollback\\s+cancels\\s+and\\s+committed\\s+changes\\b",
+      "replacement": "rollback cancels uncommitted changes"
+    }
+  ]
+}

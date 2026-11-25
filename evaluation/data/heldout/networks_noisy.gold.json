@@ -1,0 +1,166 @@
+{
+ "name": "networks_noisy",
+ "split": "heldout",
+ "domain": "computer science (networks)",
+ "has_headings": false,
+ "noisy": true,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator. Transcript contains fillers, repetitions and false starts.",
+ "topic_starts": [
+  "Okay so",
+  "Now congestion",
+  "Finally the domain name system"
+ ],
+ "concepts": [
+  {
+   "term": "transport layer",
+   "aliases": []
+  },
+  {
+   "term": "TCP",
+   "aliases": [
+    "transmission control protocol"
+   ]
+  },
+  {
+   "term": "sequence number",
+   "aliases": []
+  },
+  {
+   "term": "acknowledgment",
+   "aliases": []
+  },
+  {
+   "term": "three way handshake",
+   "aliases": []
+  },
+  {
+   "term": "congestion",
+   "aliases": []
+  },
+  {
+   "term": "congestion window",
+   "aliases": []
+  },
+  {
+   "term": "slow start",
+   "aliases": []
+  },
+  {
+   "term": "round trip time",
+   "aliases": []
+  },
+  {
+   "term": "congestion control",
+   "aliases": []
+  },
+  {
+   "term": "flow control",
+   "aliases": []
+  },
+  {
+   "term": "DNS",
+   "aliases": [
+    "domain name system"
+   ]
+  },
+  {
+   "term": "DNS resolver",
+   "aliases": []
+  },
+  {
+   "term": "name server",
+   "aliases": []
+  },
+  {
+   "term": "root server",
+   "aliases": []
+  },
+  {
+   "term": "authoritative server",
+   "aliases": []
+  },
+  {
+   "term": "cache",
+   "aliases": []
+  },
+  {
+   "term": "time to live",
+   "aliases": []
+  },
+  {
+   "term": "IP address",
+   "aliases": []
+  },
+  {
+   "term": "layered model",
+   "aliases": []
+  }
+ ],
+ "definitions": [
+  {
+   "term": "transport layer",
+   "keywords": [
+    "delivering",
+    "data",
+    "applications"
+   ]
+  },
+  {
+   "term": "congestion",
+   "keywords": [
+    "too",
+    "many",
+    "senders",
+    "data"
+   ]
+  },
+  {
+   "term": "congestion window",
+   "keywords": [
+    "limits",
+    "unacknowledged",
+    "data"
+   ]
+  },
+  {
+   "term": "DNS",
+   "keywords": [
+    "translates",
+    "names",
+    "addresses"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "TCP",
+   "target": "sequence number",
+   "type": "uses"
+  },
+  {
+   "source": "TCP",
+   "target": "congestion window",
+   "type": "uses"
+  },
+  {
+   "source": "congestion control",
+   "target": "network",
+   "type": "protects"
+  },
+  {
+   "source": "DNS",
+   "target": "IP address",
+   "type": "translates"
+  },
+  {
+   "source": "DNS resolver",
+   "target": "name server",
+   "type": "asks"
+  },
+  {
+   "source": "cache",
+   "target": "time to live",
+   "type": "expires_after"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "name": "os_real",
+ "split": "dev",
+ "domain": "computer science (operating systems)",
+ "has_headings": true,
+ "noisy": false,
+ "annotator": "Draft annotation written by Claude alongside the lecture text; NOT yet reviewed by a human annotator. Concepts only; boundaries come from the 24 raw headings (used for the headings-stripped variant).",
+ "topics_from_headings": true,
+ "merge_subsections": true,
+ "concepts": [
+  {
+   "term": "operating system",
+   "aliases": []
+  },
+  {
+   "term": "process",
+   "aliases": []
+  },
+  {
+   "term": "thread",
+   "aliases": []
+  },
+  {
+   "term": "deadlock",
+   "aliases": []
+  },
+  {
+   "term": "semaphore",
+   "aliases": []
+  },
+  {
+   "term": "virtual memory",
+   "aliases": []
+  },
+  {
+   "term": "page table",
+   "aliases": []
+  },
+  {
+   "term": "page fault",
+   "aliases": []
+  },
+  {
+   "term": "context switch",
+   "aliases": []
+  },
+  {
+   "term": "system call",
+   "aliases": []
+  },
+  {
+   "term": "kernel",
+   "aliases": []
+  },
+  {
+   "term": "file system",
+   "aliases": []
+  },
+  {
+   "term": "round robin",
+   "aliases": []
+  },
+  {
+   "term": "translation lookaside buffer",
+   "aliases": [
+    "tlb"
+   ]
+  },
+  {
+   "term": "demand paging",
+   "aliases": []
+  },
+  {
+   "term": "interrupt",
+   "aliases": []
+  },
+  {
+   "term": "critical section",
+   "aliases": []
+  },
+  {
+   "term": "device driver",
+   "aliases": []
+  }
+ ],
+ "definitions": [],
+ "relations": []
+}

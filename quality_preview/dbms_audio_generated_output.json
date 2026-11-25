@@ -1,0 +1,3630 @@
+{
+  "meta": {
+    "source": "audio",
+    "relation_mode": "rules",
+    "excluded_sentences": 1,
+    "nlp_backend": "rules",
+    "sentences": 62,
+    "topics": 6,
+    "concepts": 40,
+    "relations": 30,
+    "terminology_corrections": [
+      {
+        "segment": 3,
+        "original": "elimination results",
+        "corrected": "examination results",
+        "rule": "dbms.examination_results",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 4,
+        "original": "mammals include",
+        "corrected": "DBMS includes",
+        "rule": "dbms.mammals_include",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 4,
+        "original": "postcurSQL",
+        "corrected": "PostgreSQL",
+        "rule": "dbms.postgresql",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 4,
+        "original": "mySQL",
+        "corrected": "MySQL",
+        "rule": "dbms.mysql",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 15,
+        "original": "Unkey, ",
+        "corrected": "",
+        "rule": "dbms.remove_unkey_filler",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 15,
+        "original": "student Store departments",
+        "corrected": "student, store departments",
+        "rule": "dbms.student_store_clause_boundary",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 16,
+        "original": "reference M",
+        "corrected": "reference it",
+        "rule": "dbms.reference_it",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 24,
+        "original": "one another Durability means",
+        "corrected": "one another. Durability means",
+        "rule": "dbms.isolation_durability_boundary",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 24,
+        "original": "constraints Isolation controls",
+        "corrected": "constraints. Isolation controls",
+        "rule": "dbms.consistency_isolation_boundary",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 24,
+        "original": "preserves database rules, and constraints",
+        "corrected": "preserves database rules and constraints",
+        "rule": "dbms.definition_unnecessary_comma",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 25,
+        "original": "rollback cancels and committed changes",
+        "corrected": "rollback cancels uncommitted changes",
+        "rule": "dbms.rollback_uncommitted_changes",
+        "context": "dbms_acid"
+      },
+      {
+        "segment": 26,
+        "original": "To summarize, database stores organized information",
+        "corrected": "To summarize, a database stores organized information",
+        "rule": "dbms.database_summary_article",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 26,
+        "original": "Database management system controls access to it",
+        "corrected": "A database management system controls access to it",
+        "rule": "dbms.summary_dbms_article",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 27,
+        "original": "records, keys connect related tables",
+        "corrected": "records. Keys connect related tables",
+        "rule": "dbms.summary_relational_table_boundary",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 27,
+        "original": "SQL queries, and changes data",
+        "corrected": "SQL queries and changes data",
+        "rule": "dbms.summary_sql_grammar",
+        "context": "dbms_core_asr"
+      },
+      {
+        "segment": 28,
+        "original": "Godtable",
+        "corrected": "Good table",
+        "rule": "dbms.good_table",
+        "context": "dbms_core_asr"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "id": 0,
+      "title": "Database management system",
+      "first_sentence": 0,
+      "last_sentence": 12,
+      "key_terms": [
+        "database",
+        "row",
+        "table",
+        "structured query language",
+        "normalization"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Key Types",
+      "first_sentence": 13,
+      "last_sentence": 24,
+      "key_terms": [
+        "candidate key",
+        "composite key",
+        "primary key",
+        "key",
+        "record"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Normalization",
+      "first_sentence": 25,
+      "last_sentence": 31,
+      "key_terms": [
+        "first normal form",
+        "second normal form",
+        "third normal form",
+        "data consistent",
+        "table"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Structured query language",
+      "first_sentence": 32,
+      "last_sentence": 38,
+      "key_terms": [
+        "SQL",
+        "foreign key relationships",
+        "SQL queries",
+        "row",
+        "primary key"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Transaction",
+      "first_sentence": 39,
+      "last_sentence": 51,
+      "key_terms": [
+        "isolation",
+        "durability",
+        "consistency",
+        "atomicity",
+        "transaction commits"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Summary",
+      "first_sentence": 52,
+      "last_sentence": 61,
+      "key_terms": [
+        "table design",
+        "key",
+        "transaction",
+        "database",
+        "table"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic_id": 0,
+      "title": "Database management system",
+      "key_terms": [
+        "database",
+        "row",
+        "table",
+        "structured query language",
+        "normalization"
+      ],
+      "bullets": [
+        {
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions.",
+          "sentence": 1,
+          "sentences": [
+            1
+          ],
+          "heading": null,
+          "time": "00:04",
+          "concepts": [
+            "transaction",
+            "database",
+            "structured query language",
+            "normalization",
+            "relational tables",
+            "key"
+          ]
+        },
+        {
+          "text": "Database: Organized collection of related data.",
+          "sentence": 3,
+          "sentences": [
+            3
+          ],
+          "heading": null,
+          "time": "00:08",
+          "concepts": [
+            "database"
+          ]
+        },
+        {
+          "text": "For example, a university may store student details, course information, faculty records, and examination results in a database.",
+          "sentence": 4,
+          "sentences": [
+            4
+          ],
+          "heading": null,
+          "time": "00:08",
+          "concepts": [
+            "database"
+          ]
+        },
+        {
+          "text": "Database management system: Software used to create, read, update, and manage data.",
+          "sentence": 5,
+          "sentences": [
+            5
+          ],
+          "heading": null,
+          "time": "00:12",
+          "concepts": [
+            "database management system"
+          ]
+        },
+        {
+          "text": "The database contains the data, the management system provides tools and rules for working with it.",
+          "sentence": 7,
+          "sentences": [
+            7
+          ],
+          "heading": null,
+          "time": "00:16",
+          "concepts": [
+            "database",
+            "database rules"
+          ]
+        },
+        {
+          "text": "Table: Contains rows and columns.",
+          "sentence": 9,
+          "sentences": [
+            9
+          ],
+          "heading": null,
+          "time": "00:20",
+          "concepts": [
+            "table"
+          ]
+        },
+        {
+          "text": "Each row represents one record, and each column represents an attribute.",
+          "sentence": 10,
+          "sentences": [
+            10
+          ],
+          "heading": null,
+          "time": "00:20",
+          "concepts": [
+            "record",
+            "row"
+          ]
+        },
+        {
+          "text": "A student table might contain student ID, name, email address, and department ID.",
+          "sentence": 11,
+          "sentences": [
+            11
+          ],
+          "heading": null,
+          "time": "00:24",
+          "concepts": [
+            "student ID",
+            "department ID",
+            "student table",
+            "department name"
+          ]
+        },
+        {
+          "text": "The table schema describes its columns and the kinds of values they can store.",
+          "sentence": 12,
+          "sentences": [
+            12
+          ],
+          "heading": null,
+          "time": "00:24",
+          "concepts": [
+            "table schema"
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 1,
+      "title": "Key Types",
+      "key_terms": [
+        "candidate key",
+        "composite key",
+        "primary key",
+        "key",
+        "record"
+      ],
+      "bullets": [
+        {
+          "text": "Keys help identify records and connect tables.",
+          "sentence": 13,
+          "sentences": [
+            13
+          ],
+          "heading": null,
+          "time": "00:28",
+          "concepts": [
+            "table",
+            "key",
+            "record"
+          ]
+        },
+        {
+          "text": "A primary key uniquely identifies each row.",
+          "sentence": 14,
+          "sentences": [
+            14
+          ],
+          "heading": null,
+          "time": "00:28",
+          "concepts": [
+            "primary key",
+            "row"
+          ]
+        },
+        {
+          "text": "Foreign key: Key in another table, creating a relationship between the two tables.",
+          "sentence": 16,
+          "sentences": [
+            16
+          ],
+          "heading": null,
+          "time": "00:32",
+          "concepts": [
+            "foreign key"
+          ]
+        },
+        {
+          "text": "This connection helps maintain referential integrity.",
+          "sentence": 18,
+          "sentences": [
+            18
+          ],
+          "heading": null,
+          "time": "00:36",
+          "concepts": []
+        },
+        {
+          "text": "Candidate key: Minimal set of attributes that can uniquely identify a record.",
+          "sentence": 19,
+          "sentences": [
+            19
+          ],
+          "heading": null,
+          "time": "00:36",
+          "concepts": [
+            "candidate key"
+          ]
+        },
+        {
+          "text": "One candidate key is chosen as the primary key.",
+          "sentence": 20,
+          "sentences": [
+            20
+          ],
+          "heading": null,
+          "time": "00:40",
+          "concepts": [
+            "candidate key",
+            "primary key"
+          ]
+        },
+        {
+          "text": "Other candidate keys are called alternate keys.",
+          "sentence": 21,
+          "sentences": [
+            21
+          ],
+          "heading": null,
+          "time": "00:40",
+          "concepts": [
+            "candidate key"
+          ]
+        },
+        {
+          "text": "Composite key: Uses two or more columns together.",
+          "sentence": 22,
+          "sentences": [
+            22
+          ],
+          "heading": null,
+          "time": "00:40",
+          "concepts": [
+            "composite key"
+          ]
+        },
+        {
+          "text": "Because a student can enroll in many courses, and a course can have many students.",
+          "sentence": 24,
+          "sentences": [
+            24
+          ],
+          "heading": null,
+          "time": "00:44",
+          "concepts": [
+            "student",
+            "course"
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 2,
+      "title": "Normalization",
+      "key_terms": [
+        "first normal form",
+        "second normal form",
+        "third normal form",
+        "data consistent",
+        "table"
+      ],
+      "bullets": [
+        {
+          "text": "Normalization: Organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies.",
+          "sentence": 26,
+          "sentences": [
+            26
+          ],
+          "heading": null,
+          "time": "00:48",
+          "concepts": [
+            "normalization"
+          ]
+        },
+        {
+          "text": "First normal form: Requires each field to contain a single value rather than repeating a list.",
+          "sentence": 27,
+          "sentences": [
+            27
+          ],
+          "heading": null,
+          "time": "00:52",
+          "concepts": [
+            "first normal form"
+          ]
+        },
+        {
+          "text": "Second normal form: Requires first normal form and removes partial dependencies on part of a composite candidate key.",
+          "sentence": 28,
+          "sentences": [
+            28
+          ],
+          "heading": null,
+          "time": "00:52",
+          "concepts": [
+            "second normal form"
+          ]
+        },
+        {
+          "text": "Third normal form: Requires second normal form and removes transitive dependencies of non-key attributes.",
+          "sentence": 29,
+          "sentences": [
+            29
+          ],
+          "heading": null,
+          "time": "00:56",
+          "concepts": [
+            "third normal form"
+          ]
+        },
+        {
+          "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table and reference it using department ID.",
+          "sentence": 30,
+          "sentences": [
+            30
+          ],
+          "heading": null,
+          "time": "01:00",
+          "concepts": [
+            "department ID",
+            "department name",
+            "student"
+          ]
+        },
+        {
+          "text": "This reduces duplicated data, and makes updates more consistent.",
+          "sentence": 31,
+          "sentences": [
+            31
+          ],
+          "heading": null,
+          "time": "01:04",
+          "concepts": [
+            "data consistent"
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 3,
+      "title": "Structured query language",
+      "key_terms": [
+        "SQL",
+        "foreign key relationships",
+        "SQL queries",
+        "row",
+        "primary key"
+      ],
+      "bullets": [
+        {
+          "text": "When related information is needed from separate tables, SQL joins can combine the matching rows.",
+          "sentence": 32,
+          "sentences": [
+            32
+          ],
+          "heading": null,
+          "time": "01:04",
+          "concepts": [
+            "SQL"
+          ]
+        },
+        {
+          "text": "Structured query language: Used to query and modify relational data.",
+          "sentence": 33,
+          "sentences": [
+            33
+          ],
+          "heading": null,
+          "time": "01:08",
+          "concepts": [
+            "structured query language"
+          ]
+        },
+        {
+          "text": "The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records.",
+          "sentence": 34,
+          "sentences": [
+            34
+          ],
+          "heading": null,
+          "time": "01:08",
+          "concepts": [
+            "record",
+            "row"
+          ]
+        },
+        {
+          "text": "An inner join returns rows with matching values in both tables.",
+          "sentence": 36,
+          "sentences": [
+            36
+          ],
+          "heading": null,
+          "time": "01:12",
+          "concepts": [
+            "table"
+          ]
+        },
+        {
+          "text": "A left join returns every row from the left table, and includes matching information from the right table when available.",
+          "sentence": 37,
+          "sentences": [
+            37
+          ],
+          "heading": null,
+          "time": "01:16",
+          "concepts": [
+            "row"
+          ]
+        },
+        {
+          "text": "Joins commonly use primary key and foreign key relationships.",
+          "sentence": 38,
+          "sentences": [
+            38
+          ],
+          "heading": null,
+          "time": "01:20",
+          "concepts": [
+            "primary key",
+            "foreign key relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 4,
+      "title": "Transaction",
+      "key_terms": [
+        "isolation",
+        "durability",
+        "consistency",
+        "atomicity",
+        "transaction commits"
+      ],
+      "bullets": [
+        {
+          "text": "Transaction: Logical unit of database work.",
+          "sentence": 39,
+          "sentences": [
+            39
+          ],
+          "heading": null,
+          "time": "01:20",
+          "concepts": [
+            "transaction"
+          ]
+        },
+        {
+          "text": "Imagine transferring money between two bank accounts.",
+          "sentence": 40,
+          "sentences": [
+            40
+          ],
+          "heading": null,
+          "time": "01:24",
+          "concepts": []
+        },
+        {
+          "text": "One operation subtracts money from the sender, and another adds it to the receiver.",
+          "sentence": 41,
+          "sentences": [
+            41
+          ],
+          "heading": null,
+          "time": "01:24",
+          "concepts": []
+        },
+        {
+          "text": "If only one operation succeeds, the records become inconsistent.",
+          "sentence": 42,
+          "sentences": [
+            42
+          ],
+          "heading": null,
+          "time": "01:28",
+          "concepts": [
+            "record"
+          ]
+        },
+        {
+          "text": "A transaction groups these operations so they can be handled together.",
+          "sentence": 43,
+          "sentences": [
+            43
+          ],
+          "heading": null,
+          "time": "01:28",
+          "concepts": [
+            "transaction"
+          ]
+        },
+        {
+          "text": "Reliable transactions follow four important properties: Atomicity, consistency, isolation, and durability.",
+          "sentence": 44,
+          "sentences": [
+            44
+          ],
+          "heading": null,
+          "time": "01:32",
+          "concepts": [
+            "isolation",
+            "durability",
+            "consistency",
+            "atomicity"
+          ]
+        },
+        {
+          "text": "Atomicity: All operations in the transaction happen, or none of them do.",
+          "sentence": 45,
+          "sentences": [
+            45
+          ],
+          "heading": null,
+          "time": "01:32",
+          "concepts": [
+            "atomicity"
+          ]
+        },
+        {
+          "text": "Consistency: Transaction preserves database rules and constraints.",
+          "sentence": 46,
+          "sentences": [
+            46
+          ],
+          "heading": null,
+          "time": "01:36",
+          "concepts": [
+            "consistency"
+          ]
+        },
+        {
+          "text": "Isolation: Controls how concurrent transactions affect one another.",
+          "sentence": 47,
+          "sentences": [
+            47
+          ],
+          "heading": null,
+          "time": "01:36",
+          "concepts": [
+            "isolation"
+          ]
+        },
+        {
+          "text": "Durability: After a transaction commits, its changes persist according to the database's recovery guarantees.",
+          "sentence": 48,
+          "sentences": [
+            48
+          ],
+          "heading": null,
+          "time": "01:36",
+          "concepts": [
+            "durability"
+          ]
+        },
+        {
+          "text": "Commit confirms a transaction, while rollback cancels uncommitted changes.",
+          "sentence": 49,
+          "sentences": [
+            49
+          ],
+          "heading": null,
+          "time": "01:40",
+          "concepts": [
+            "transaction",
+            "transaction commits"
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": 5,
+      "title": "Summary",
+      "key_terms": [
+        "table design",
+        "key",
+        "transaction",
+        "database",
+        "table"
+      ],
+      "bullets": [
+        {
+          "text": "A database stores organized information.",
+          "sentence": 52,
+          "sentences": [
+            52
+          ],
+          "heading": null,
+          "time": "01:44",
+          "concepts": [
+            "database"
+          ]
+        },
+        {
+          "text": "A database management system controls access to it.",
+          "sentence": 53,
+          "sentences": [
+            53
+          ],
+          "heading": null,
+          "time": "01:44",
+          "concepts": [
+            "database management system"
+          ]
+        },
+        {
+          "text": "Relational tables organize records.",
+          "sentence": 54,
+          "sentences": [
+            54
+          ],
+          "heading": null,
+          "time": "01:48",
+          "concepts": [
+            "relational tables",
+            "record"
+          ]
+        },
+        {
+          "text": "Key: Connect related tables.",
+          "sentence": 55,
+          "sentences": [
+            55
+          ],
+          "heading": null,
+          "time": "01:48",
+          "concepts": [
+            "key"
+          ]
+        },
+        {
+          "text": "Normalization reduces redundancy, SQL queries and changes data.",
+          "sentence": 56,
+          "sentences": [
+            56
+          ],
+          "heading": null,
+          "time": "01:48",
+          "concepts": [
+            "normalization",
+            "SQL queries"
+          ]
+        },
+        {
+          "text": "Transactions protect reliable updates.",
+          "sentence": 57,
+          "sentences": [
+            57
+          ],
+          "heading": null,
+          "time": "01:48",
+          "concepts": [
+            "transaction"
+          ]
+        },
+        {
+          "text": "Keys establish relationships, joins retrieve related information, and transaction properties help.",
+          "sentence": 60,
+          "sentences": [
+            60
+          ],
+          "heading": null,
+          "time": "01:52",
+          "concepts": [
+            "foreign key relationships",
+            "key"
+          ]
+        }
+      ]
+    }
+  ],
+  "quick_revision": {
+    "terms": [
+      {
+        "term": "structured query language",
+        "definition": "used to query and modify relational data"
+      },
+      {
+        "term": "candidate key",
+        "definition": "minimal set of attributes that can uniquely identify a record"
+      },
+      {
+        "term": "first normal form",
+        "definition": "requires each field to contain a single value rather than repeating a list"
+      },
+      {
+        "term": "transaction",
+        "definition": "logical unit of database work"
+      },
+      {
+        "term": "second normal form",
+        "definition": "requires first normal form and removes partial dependencies on part of a composite candidate key"
+      },
+      {
+        "term": "database management system",
+        "definition": "software used to create, read, update, and manage data"
+      },
+      {
+        "term": "third normal form",
+        "definition": "requires second normal form and removes transitive dependencies of non-key attributes"
+      },
+      {
+        "term": "composite key",
+        "definition": "uses two or more columns together"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "transaction",
+        "label": "has property",
+        "target": "isolation",
+        "text": "transaction has property isolation",
+        "sentence": 44
+      },
+      {
+        "source": "transaction",
+        "label": "has property",
+        "target": "atomicity",
+        "text": "transaction has property atomicity",
+        "sentence": 44
+      },
+      {
+        "source": "transaction",
+        "label": "has property",
+        "target": "consistency",
+        "text": "transaction has property consistency",
+        "sentence": 44
+      },
+      {
+        "source": "transaction",
+        "label": "has property",
+        "target": "durability",
+        "text": "transaction has property durability",
+        "sentence": 44
+      },
+      {
+        "source": "transaction",
+        "label": "preserves",
+        "target": "database rules",
+        "text": "transaction preserves database rules",
+        "sentence": 46
+      },
+      {
+        "source": "candidate key",
+        "label": "selected as",
+        "target": "primary key",
+        "text": "candidate key selected as primary key",
+        "sentence": 20
+      },
+      {
+        "source": "student table",
+        "label": "contains",
+        "target": "student ID",
+        "text": "student table contains student ID",
+        "sentence": 11
+      },
+      {
+        "source": "student",
+        "label": "enroll in",
+        "target": "course",
+        "text": "student enroll in course",
+        "sentence": 24
+      }
+    ],
+    "remember": []
+  },
+  "concepts": [
+    {
+      "id": "transaction",
+      "name": "transaction",
+      "aliases": [],
+      "importance": 0.857,
+      "components": {
+        "freq": 0.946,
+        "central": 1.0,
+        "signal": 0.6,
+        "distinct": 1.0,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 4,
+      "mentions": 7,
+      "definition": "logical unit of database work",
+      "evidence": [
+        {
+          "sentence": 39,
+          "text": "A transaction is a logical unit of database work.",
+          "time": "01:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 43,
+          "text": "A transaction groups these operations so they can be handled together.",
+          "time": "01:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 45,
+          "text": "Atomicity means all operations in the transaction happen, or none of them do.",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "database",
+      "aliases": [],
+      "importance": 0.698,
+      "components": {
+        "freq": 0.886,
+        "central": 0.499,
+        "signal": 0.6,
+        "distinct": 0.713,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 0,
+      "mentions": 6,
+      "definition": "organized collection of related data",
+      "evidence": [
+        {
+          "sentence": 3,
+          "text": "A database is an organized collection of related data",
+          "time": "00:08",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 4,
+          "text": "For example, a university may store student details, course information, faculty records,. and examination results in a database",
+          "time": "00:08",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 7,
+          "text": "The database contains the data, the management system provides tools and rules for working with it.",
+          "time": "00:16",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "first normal form",
+      "name": "first normal form",
+      "aliases": [],
+      "importance": 0.681,
+      "components": {
+        "freq": 0.5,
+        "central": 0.444,
+        "signal": 0.6,
+        "distinct": 0.673,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 2,
+      "mentions": 2,
+      "definition": "requires each field to contain a single value rather than repeating list",
+      "evidence": [
+        {
+          "sentence": 27,
+          "text": "First normal form requires each field to contain a single value rather than repeating list",
+          "time": "00:52",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 28,
+          "text": "Second normal form requires first normal form. and removes partial dependencies on part of a composite candidate key",
+          "time": "00:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "second normal form",
+      "name": "second normal form",
+      "aliases": [],
+      "importance": 0.681,
+      "components": {
+        "freq": 0.5,
+        "central": 0.444,
+        "signal": 0.6,
+        "distinct": 0.673,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 2,
+      "mentions": 2,
+      "definition": "requires first normal form. and removes partial dependencies on part of a composite candidate key",
+      "evidence": [
+        {
+          "sentence": 28,
+          "text": "Second normal form requires first normal form. and removes partial dependencies on part of a composite candidate key",
+          "time": "00:52",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 29,
+          "text": "Third normal form requires second normal form, and removes transitive dependencies of non-key attributes.",
+          "time": "00:56",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "structured query language",
+      "name": "structured query language",
+      "aliases": [],
+      "importance": 0.633,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.6,
+        "distinct": 0.431,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": "used to query and modify relational data",
+      "evidence": [
+        {
+          "sentence": 33,
+          "text": "Structured query language, or SQL is used to query and modify relational data",
+          "time": "01:08",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "database management system",
+      "name": "database management system",
+      "aliases": [],
+      "importance": 0.622,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.6,
+        "distinct": 0.358,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": "software used to create, read, update, and manage data",
+      "evidence": [
+        {
+          "sentence": 5,
+          "text": "A database management system is software used to create, read, update, and manage data.",
+          "time": "00:12",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 53,
+          "text": "A database management system controls access to it.",
+          "time": "01:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "candidate key",
+      "name": "candidate key",
+      "aliases": [],
+      "importance": 0.612,
+      "components": {
+        "freq": 0.631,
+        "central": 0.39,
+        "signal": 0.6,
+        "distinct": 0.664,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 3,
+      "definition": "minimal set of attributes that can uniquely identify a record",
+      "evidence": [
+        {
+          "sentence": 19,
+          "text": "A candidate key is a minimal set of attributes that can uniquely identify a record.",
+          "time": "00:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 20,
+          "text": "One candidate key is chosen as the primary key",
+          "time": "00:40",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 21,
+          "text": "Other candidate keys are called alternate keys",
+          "time": "00:40",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "composite key",
+      "name": "composite key",
+      "aliases": [],
+      "importance": 0.582,
+      "components": {
+        "freq": 0.5,
+        "central": 0.502,
+        "signal": 0.6,
+        "distinct": 0.536,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 2,
+      "definition": "uses two or more columns together",
+      "evidence": [
+        {
+          "sentence": 22,
+          "text": "A composite key uses two or more columns together.",
+          "time": "00:40",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 23,
+          "text": "In an enrollment table, student ID, and course ID may form a composite key",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "third normal form",
+      "name": "third normal form",
+      "aliases": [],
+      "importance": 0.553,
+      "components": {
+        "freq": 0.315,
+        "central": 0.24,
+        "signal": 0.6,
+        "distinct": 0.398,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 2,
+      "mentions": 1,
+      "definition": "requires second normal form, and removes transitive dependencies of non-key attributes",
+      "evidence": [
+        {
+          "sentence": 29,
+          "text": "Third normal form requires second normal form, and removes transitive dependencies of non-key attributes.",
+          "time": "00:56",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "normalization",
+      "name": "normalization",
+      "aliases": [],
+      "importance": 0.528,
+      "components": {
+        "freq": 0.631,
+        "central": 0.205,
+        "signal": 0.6,
+        "distinct": 0.398,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 0,
+      "mentions": 3,
+      "definition": "organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies",
+      "evidence": [
+        {
+          "sentence": 26,
+          "text": "Normalization organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies.",
+          "time": "00:48",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 56,
+          "text": "Normalization reduces redundancy, SQL queries and changes data",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "isolation",
+      "name": "isolation",
+      "aliases": [],
+      "importance": 0.518,
+      "components": {
+        "freq": 0.5,
+        "central": 0.393,
+        "signal": 1.0,
+        "distinct": 0.649,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 4,
+      "mentions": 2,
+      "definition": "controls how concurrent transactions affect one another",
+      "evidence": [
+        {
+          "sentence": 47,
+          "text": "Isolation controls how concurrent transactions affect one another.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "primary key",
+      "name": "primary key",
+      "aliases": [],
+      "importance": 0.484,
+      "components": {
+        "freq": 0.631,
+        "central": 0.363,
+        "signal": 0.0,
+        "distinct": 0.536,
+        "spread": 0.333,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 3,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 14,
+          "text": "A primary key uniquely identifies each row",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 20,
+          "text": "One candidate key is chosen as the primary key",
+          "time": "00:40",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 38,
+          "text": "Joins commonly use primary key and foreign key relationships",
+          "time": "01:20",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "student id",
+      "name": "student ID",
+      "aliases": [],
+      "importance": 0.483,
+      "components": {
+        "freq": 0.5,
+        "central": 0.438,
+        "signal": 0.0,
+        "distinct": 0.316,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 11,
+          "text": "A student table might contain student ID, name, email address, and department ID",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 23,
+          "text": "In an enrollment table, student ID, and course ID may form a composite key",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "department id",
+      "name": "department ID",
+      "aliases": [],
+      "importance": 0.476,
+      "components": {
+        "freq": 0.631,
+        "central": 0.093,
+        "signal": 0.0,
+        "distinct": 0.398,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 3,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 11,
+          "text": "A student table might contain student ID, name, email address, and department ID",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 17,
+          "text": "For example, department ID in the student table can reference department ID in a department table.",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 30,
+          "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table. and reference it using department ID",
+          "time": "01:00",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "student table",
+      "name": "student table",
+      "aliases": [],
+      "importance": 0.472,
+      "components": {
+        "freq": 0.5,
+        "central": 0.379,
+        "signal": 0.0,
+        "distinct": 0.316,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 11,
+          "text": "A student table might contain student ID, name, email address, and department ID",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 17,
+          "text": "For example, department ID in the student table can reference department ID in a department table.",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "database rule",
+      "name": "database rules",
+      "aliases": [
+        "rules"
+      ],
+      "importance": 0.471,
+      "components": {
+        "freq": 0.5,
+        "central": 0.325,
+        "signal": 0.0,
+        "distinct": 0.383,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 7,
+          "text": "The database contains the data, the management system provides tools and rules for working with it.",
+          "time": "00:16",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 46,
+          "text": "Consistency means the transaction preserves database rules and constraints.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "atomicity",
+      "name": "atomicity",
+      "aliases": [],
+      "importance": 0.464,
+      "components": {
+        "freq": 0.5,
+        "central": 0.127,
+        "signal": 1.0,
+        "distinct": 0.649,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 4,
+      "mentions": 2,
+      "definition": "all operations in the transaction happen, or none of them do",
+      "evidence": [
+        {
+          "sentence": 45,
+          "text": "Atomicity means all operations in the transaction happen, or none of them do.",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "consistency",
+      "name": "consistency",
+      "aliases": [],
+      "importance": 0.464,
+      "components": {
+        "freq": 0.5,
+        "central": 0.127,
+        "signal": 1.0,
+        "distinct": 0.649,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 4,
+      "mentions": 2,
+      "definition": "transaction preserves database rules and constraints",
+      "evidence": [
+        {
+          "sentence": 46,
+          "text": "Consistency means the transaction preserves database rules and constraints.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "durability",
+      "name": "durability",
+      "aliases": [],
+      "importance": 0.464,
+      "components": {
+        "freq": 0.5,
+        "central": 0.127,
+        "signal": 1.0,
+        "distinct": 0.649,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 4,
+      "mentions": 2,
+      "definition": "after a transaction commits, its changes persist according to the database's recovery guarantees",
+      "evidence": [
+        {
+          "sentence": 48,
+          "text": "Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "name": "table",
+      "aliases": [],
+      "importance": 0.453,
+      "components": {
+        "freq": 1.0,
+        "central": 0.595,
+        "signal": 0.6,
+        "distinct": 0.536,
+        "spread": 0.833,
+        "early": 1.0,
+        "specificity_adjustment": -0.3
+      },
+      "topic": 0,
+      "mentions": 8,
+      "definition": "contains rows and columns",
+      "evidence": [
+        {
+          "sentence": 9,
+          "text": "A table contains rows and columns",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 8,
+          "text": "In a relational database, information is arranged in tables",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 13,
+          "text": "Keys help identify records and connect tables",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 16,
+          "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "relational table",
+      "name": "relational tables",
+      "aliases": [],
+      "importance": 0.444,
+      "components": {
+        "freq": 0.5,
+        "central": 0.208,
+        "signal": 0.0,
+        "distinct": 0.358,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 54,
+          "text": "Relational tables organize records.",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "foreign key",
+      "name": "foreign key",
+      "aliases": [],
+      "importance": 0.431,
+      "components": {
+        "freq": 0.315,
+        "central": 0.138,
+        "signal": 0.6,
+        "distinct": 0.316,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 1,
+      "definition": "key in another table, creating a relationship between the two tables",
+      "evidence": [
+        {
+          "sentence": 16,
+          "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "department name",
+      "name": "department name",
+      "aliases": [
+        "name"
+      ],
+      "importance": 0.428,
+      "components": {
+        "freq": 0.5,
+        "central": 0.1,
+        "signal": 0.0,
+        "distinct": 0.398,
+        "spread": 0.333,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 11,
+          "text": "A student table might contain student ID, name, email address, and department ID",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 30,
+          "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table. and reference it using department ID",
+          "time": "01:00",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "foreign key relationship",
+      "name": "foreign key relationships",
+      "aliases": [
+        "relationships"
+      ],
+      "importance": 0.413,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.0,
+        "distinct": 0.431,
+        "spread": 0.333,
+        "early": 0.0,
+        "specificity_adjustment": 0.18
+      },
+      "topic": 3,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 38,
+          "text": "Joins commonly use primary key and foreign key relationships",
+          "time": "01:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 60,
+          "text": "Keys establish relationships, joins retrieve related information, and transaction properties help.",
+          "time": "01:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "student",
+      "name": "student",
+      "aliases": [],
+      "importance": 0.401,
+      "components": {
+        "freq": 0.631,
+        "central": 0.499,
+        "signal": 0.0,
+        "distinct": 0.398,
+        "spread": 0.333,
+        "early": 0.5,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 1,
+      "mentions": 3,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 24,
+          "text": "Because a student can enroll in many courses, and a course can have many students.",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 30,
+          "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table. and reference it using department ID",
+          "time": "01:00",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "table schema",
+      "name": "table schema",
+      "aliases": [],
+      "importance": 0.379,
+      "components": {
+        "freq": 0.315,
+        "central": 0.244,
+        "signal": 0.0,
+        "distinct": 0.299,
+        "spread": 0.167,
+        "early": 1.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 0,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 12,
+          "text": "The table schema describes its columns and the kinds of values they can store.",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "data consistent",
+      "name": "data consistent",
+      "aliases": [
+        "consistent"
+      ],
+      "importance": 0.376,
+      "components": {
+        "freq": 0.5,
+        "central": 0.342,
+        "signal": 0.0,
+        "distinct": 0.398,
+        "spread": 0.333,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 2,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 31,
+          "text": "This reduces duplicated data, and makes updates more consistent",
+          "time": "01:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 59,
+          "text": "Good table design makes data consistent",
+          "time": "01:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "transaction commit",
+      "name": "transaction commits",
+      "aliases": [
+        "Commit"
+      ],
+      "importance": 0.339,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.0,
+        "distinct": 0.649,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 4,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 48,
+          "text": "Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 49,
+          "text": "Commit confirms a transaction, while rollback cancels uncommitted changes",
+          "time": "01:40",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "key",
+      "name": "key",
+      "aliases": [],
+      "importance": 0.338,
+      "components": {
+        "freq": 0.815,
+        "central": 0.369,
+        "signal": 0.6,
+        "distinct": 0.606,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": -0.3
+      },
+      "topic": 1,
+      "mentions": 5,
+      "definition": "connect related tables",
+      "evidence": [
+        {
+          "sentence": 55,
+          "text": "Keys connect related tables",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 1,
+          "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+          "time": "00:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 13,
+          "text": "Keys help identify records and connect tables",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 16,
+          "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "minimal set",
+      "name": "minimal set",
+      "aliases": [],
+      "importance": 0.326,
+      "components": {
+        "freq": 0.315,
+        "central": 0.217,
+        "signal": 0.0,
+        "distinct": 0.316,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 19,
+          "text": "A candidate key is a minimal set of attributes that can uniquely identify a record.",
+          "time": "00:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "course",
+      "name": "course",
+      "aliases": [],
+      "importance": 0.324,
+      "components": {
+        "freq": 0.5,
+        "central": 0.427,
+        "signal": 0.0,
+        "distinct": 0.316,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 1,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 24,
+          "text": "Because a student can enroll in many courses, and a course can have many students.",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "sql query",
+      "name": "SQL queries",
+      "aliases": [
+        "query"
+      ],
+      "importance": 0.323,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.0,
+        "distinct": 0.431,
+        "spread": 0.333,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 3,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 33,
+          "text": "Structured query language, or SQL is used to query and modify relational data",
+          "time": "01:08",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 56,
+          "text": "Normalization reduces redundancy, SQL queries and changes data",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "course id",
+      "name": "course ID",
+      "aliases": [],
+      "importance": 0.315,
+      "components": {
+        "freq": 0.315,
+        "central": 0.158,
+        "signal": 0.0,
+        "distinct": 0.316,
+        "spread": 0.167,
+        "early": 0.5,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 1,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 23,
+          "text": "In an enrollment table, student ID, and course ID may form a composite key",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "logical unit",
+      "name": "logical unit",
+      "aliases": [],
+      "importance": 0.308,
+      "components": {
+        "freq": 0.315,
+        "central": 0.325,
+        "signal": 0.0,
+        "distinct": 0.383,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 4,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 39,
+          "text": "A transaction is a logical unit of database work.",
+          "time": "01:20",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "table design",
+      "name": "table design",
+      "aliases": [],
+      "importance": 0.308,
+      "components": {
+        "freq": 0.315,
+        "central": 0.342,
+        "signal": 0.0,
+        "distinct": 0.358,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 5,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 59,
+          "text": "Good table design makes data consistent",
+          "time": "01:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "concurrent transaction",
+      "name": "concurrent transactions",
+      "aliases": [],
+      "importance": 0.306,
+      "components": {
+        "freq": 0.315,
+        "central": 0.313,
+        "signal": 0.0,
+        "distinct": 0.383,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.09
+      },
+      "topic": 4,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 47,
+          "text": "Isolation controls how concurrent transactions affect one another.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "organized collection",
+      "name": "organized collection",
+      "aliases": [],
+      "importance": 0.293,
+      "components": {
+        "freq": 0.315,
+        "central": 0.264,
+        "signal": 0.0,
+        "distinct": 0.299,
+        "spread": 0.167,
+        "early": 1.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 0,
+      "mentions": 1,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 3,
+          "text": "A database is an organized collection of related data",
+          "time": "00:08",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "name": "record",
+      "aliases": [],
+      "importance": 0.285,
+      "components": {
+        "freq": 0.946,
+        "central": 0.423,
+        "signal": 0.0,
+        "distinct": 0.536,
+        "spread": 0.833,
+        "early": 1.0,
+        "specificity_adjustment": -0.3
+      },
+      "topic": 1,
+      "mentions": 7,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 10,
+          "text": "Each row represents one record, and each column represents an attribute.",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 13,
+          "text": "Keys help identify records and connect tables",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 19,
+          "text": "A candidate key is a minimal set of attributes that can uniquely identify a record.",
+          "time": "00:36",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 34,
+          "text": "The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records.",
+          "time": "01:08",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "row",
+      "name": "row",
+      "aliases": [],
+      "importance": 0.266,
+      "components": {
+        "freq": 0.815,
+        "central": 0.515,
+        "signal": 0.0,
+        "distinct": 0.729,
+        "spread": 0.5,
+        "early": 1.0,
+        "specificity_adjustment": -0.3
+      },
+      "topic": 0,
+      "mentions": 5,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 9,
+          "text": "A table contains rows and columns",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 10,
+          "text": "Each row represents one record, and each column represents an attribute.",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 14,
+          "text": "A primary key uniquely identifies each row",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 34,
+          "text": "The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records.",
+          "time": "01:08",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "aliases": [],
+      "importance": 0.261,
+      "components": {
+        "freq": 0.5,
+        "central": 0.051,
+        "signal": 0.0,
+        "distinct": 0.729,
+        "spread": 0.167,
+        "early": 0.0,
+        "specificity_adjustment": 0.0
+      },
+      "topic": 3,
+      "mentions": 2,
+      "definition": null,
+      "evidence": [
+        {
+          "sentence": 32,
+          "text": "When related information is needed from separate tables, SQL joins can combine the matching rows.",
+          "time": "01:04",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 33,
+          "text": "Structured query language, or SQL is used to query and modify relational data",
+          "time": "01:08",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "database",
+      "target": "organized collection",
+      "label": "is a",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 3,
+          "text": "A database is an organized collection of related data",
+          "time": "00:08",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "table",
+      "target": "row",
+      "label": "contains",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 9,
+          "text": "A table contains rows and columns",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "row",
+      "target": "record",
+      "label": "represents",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 10,
+          "text": "Each row represents one record, and each column represents an attribute.",
+          "time": "00:20",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "student table",
+      "target": "student id",
+      "label": "contains",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 11,
+          "text": "A student table might contain student ID, name, email address, and department ID",
+          "time": "00:24",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "primary key",
+      "target": "row",
+      "label": "uniquely identifies",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 14,
+          "text": "A primary key uniquely identifies each row",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "candidate key",
+      "target": "minimal set",
+      "label": "is a",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 19,
+          "text": "A candidate key is a minimal set of attributes that can uniquely identify a record.",
+          "time": "00:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "candidate key",
+      "target": "primary key",
+      "label": "selected as",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 20,
+          "text": "One candidate key is chosen as the primary key",
+          "time": "00:40",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "student",
+      "target": "course",
+      "label": "enroll in",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 24,
+          "text": "Because a student can enroll in many courses, and a course can have many students.",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "normalization",
+      "target": "table",
+      "label": "organizes",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 26,
+          "text": "Normalization organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies.",
+          "time": "00:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "second normal form",
+      "target": "first normal form",
+      "label": "requires",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 28,
+          "text": "Second normal form requires first normal form. and removes partial dependencies on part of a composite candidate key",
+          "time": "00:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "third normal form",
+      "target": "second normal form",
+      "label": "requires",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 29,
+          "text": "Third normal form requires second normal form, and removes transitive dependencies of non-key attributes.",
+          "time": "00:56",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "logical unit",
+      "label": "is a",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 39,
+          "text": "A transaction is a logical unit of database work.",
+          "time": "01:20",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "database rule",
+      "label": "preserves",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 46,
+          "text": "Consistency means the transaction preserves database rules and constraints.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "isolation",
+      "target": "concurrent transaction",
+      "label": "controls",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 47,
+          "text": "Isolation controls how concurrent transactions affect one another.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "relational table",
+      "target": "record",
+      "label": "organizes",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 54,
+          "text": "Relational tables organize records.",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "key",
+      "target": "table",
+      "label": "connect related",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 55,
+          "text": "Keys connect related tables",
+          "time": "01:48",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "table design",
+      "target": "data consistent",
+      "label": "makes",
+      "kind": "pattern",
+      "weight": 2.0,
+      "evidence": [
+        {
+          "sentence": 59,
+          "text": "Good table design makes data consistent",
+          "time": "01:52",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "foreign key",
+      "target": "key",
+      "label": "refers to",
+      "kind": "pattern",
+      "weight": 1.0,
+      "evidence": [
+        {
+          "sentence": 16,
+          "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "student id",
+      "target": "composite key",
+      "label": "forms part of",
+      "kind": "pattern",
+      "weight": 1.0,
+      "evidence": [
+        {
+          "sentence": 23,
+          "text": "In an enrollment table, student ID, and course ID may form a composite key",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "course id",
+      "target": "composite key",
+      "label": "forms part of",
+      "kind": "pattern",
+      "weight": 1.0,
+      "evidence": [
+        {
+          "sentence": 23,
+          "text": "In an enrollment table, student ID, and course ID may form a composite key",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "atomicity",
+      "label": "has property",
+      "kind": "context",
+      "weight": 0.55,
+      "evidence": [
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 45,
+          "text": "Atomicity means all operations in the transaction happen, or none of them do.",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "consistency",
+      "label": "has property",
+      "kind": "context",
+      "weight": 0.55,
+      "evidence": [
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 46,
+          "text": "Consistency means the transaction preserves database rules and constraints.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "isolation",
+      "label": "has property",
+      "kind": "context",
+      "weight": 0.55,
+      "evidence": [
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 47,
+          "text": "Isolation controls how concurrent transactions affect one another.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "transaction",
+      "target": "durability",
+      "label": "has property",
+      "kind": "context",
+      "weight": 0.55,
+      "evidence": [
+        {
+          "sentence": 44,
+          "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+          "time": "01:32",
+          "heading": null,
+          "excluded": null
+        },
+        {
+          "sentence": 48,
+          "text": "Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees.",
+          "time": "01:36",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "key",
+      "target": "record",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 13,
+          "text": "Keys help identify records and connect tables",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "record",
+      "target": "table",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 13,
+          "text": "Keys help identify records and connect tables",
+          "time": "00:28",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "key",
+      "target": "table",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 16,
+          "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "department id",
+      "target": "student table",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 17,
+          "text": "For example, department ID in the student table can reference department ID in a department table.",
+          "time": "00:32",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "course",
+      "target": "student",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 24,
+          "text": "Because a student can enroll in many courses, and a course can have many students.",
+          "time": "00:44",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    },
+    {
+      "source": "department name",
+      "target": "student",
+      "label": "related to",
+      "kind": "cooccur",
+      "weight": 0.3,
+      "evidence": [
+        {
+          "sentence": 30,
+          "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table. and reference it using department ID",
+          "time": "01:00",
+          "heading": null,
+          "excluded": null
+        }
+      ]
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "transaction",
+        "label": "transaction",
+        "importance": 0.857,
+        "topic": 4
+      },
+      {
+        "id": "first normal form",
+        "label": "first normal form",
+        "importance": 0.681,
+        "topic": 2
+      },
+      {
+        "id": "second normal form",
+        "label": "second normal form",
+        "importance": 0.681,
+        "topic": 2
+      },
+      {
+        "id": "candidate key",
+        "label": "candidate key",
+        "importance": 0.612,
+        "topic": 1
+      },
+      {
+        "id": "composite key",
+        "label": "composite key",
+        "importance": 0.582,
+        "topic": 1
+      },
+      {
+        "id": "third normal form",
+        "label": "third normal form",
+        "importance": 0.553,
+        "topic": 2
+      },
+      {
+        "id": "isolation",
+        "label": "isolation",
+        "importance": 0.518,
+        "topic": 4
+      },
+      {
+        "id": "primary key",
+        "label": "primary key",
+        "importance": 0.484,
+        "topic": 1
+      },
+      {
+        "id": "student id",
+        "label": "student ID",
+        "importance": 0.483,
+        "topic": 0
+      },
+      {
+        "id": "atomicity",
+        "label": "atomicity",
+        "importance": 0.464,
+        "topic": 4
+      },
+      {
+        "id": "consistency",
+        "label": "consistency",
+        "importance": 0.464,
+        "topic": 4
+      },
+      {
+        "id": "durability",
+        "label": "durability",
+        "importance": 0.464,
+        "topic": 4
+      },
+      {
+        "id": "relational table",
+        "label": "relational tables",
+        "importance": 0.444,
+        "topic": 0
+      },
+      {
+        "id": "foreign key relationship",
+        "label": "foreign key relationships",
+        "importance": 0.413,
+        "topic": 3
+      },
+      {
+        "id": "student",
+        "label": "student",
+        "importance": 0.401,
+        "topic": 1
+      },
+      {
+        "id": "course",
+        "label": "course",
+        "importance": 0.324,
+        "topic": 1
+      },
+      {
+        "id": "course id",
+        "label": "course ID",
+        "importance": 0.315,
+        "topic": 1
+      },
+      {
+        "id": "record",
+        "label": "record",
+        "importance": 0.285,
+        "topic": 1
+      }
+    ],
+    "edges": [
+      {
+        "source": "transaction",
+        "target": "atomicity",
+        "label": "has property",
+        "kind": "context",
+        "weight": 0.55,
+        "evidence": [
+          44,
+          45
+        ]
+      },
+      {
+        "source": "transaction",
+        "target": "consistency",
+        "label": "has property",
+        "kind": "context",
+        "weight": 0.55,
+        "evidence": [
+          44,
+          46
+        ]
+      },
+      {
+        "source": "transaction",
+        "target": "isolation",
+        "label": "has property",
+        "kind": "context",
+        "weight": 0.55,
+        "evidence": [
+          44,
+          47
+        ]
+      },
+      {
+        "source": "transaction",
+        "target": "durability",
+        "label": "has property",
+        "kind": "context",
+        "weight": 0.55,
+        "evidence": [
+          44,
+          48
+        ]
+      },
+      {
+        "source": "student id",
+        "target": "composite key",
+        "label": "forms part of",
+        "kind": "pattern",
+        "weight": 1.0,
+        "evidence": [
+          23
+        ]
+      },
+      {
+        "source": "course id",
+        "target": "composite key",
+        "label": "forms part of",
+        "kind": "pattern",
+        "weight": 1.0,
+        "evidence": [
+          23
+        ]
+      },
+      {
+        "source": "second normal form",
+        "target": "first normal form",
+        "label": "requires",
+        "kind": "pattern",
+        "weight": 2.0,
+        "evidence": [
+          28
+        ]
+      },
+      {
+        "source": "third normal form",
+        "target": "second normal form",
+        "label": "requires",
+        "kind": "pattern",
+        "weight": 2.0,
+        "evidence": [
+          29
+        ]
+      },
+      {
+        "source": "candidate key",
+        "target": "primary key",
+        "label": "selected as",
+        "kind": "pattern",
+        "weight": 2.0,
+        "evidence": [
+          20
+        ]
+      },
+      {
+        "source": "student",
+        "target": "course",
+        "label": "enroll in",
+        "kind": "pattern",
+        "weight": 2.0,
+        "evidence": [
+          24
+        ]
+      },
+      {
+        "source": "relational table",
+        "target": "record",
+        "label": "organizes",
+        "kind": "pattern",
+        "weight": 2.0,
+        "evidence": [
+          54
+        ]
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "sentence": 0,
+      "text": "In this lecture, we will learn the fundamentals of a database management system, often abbreviated as dbms.",
+      "time": "00:00",
+      "heading": null,
+      "excluded": "instructional",
+      "topic": 0
+    },
+    {
+      "sentence": 1,
+      "text": "We will cover databases, relational tables, keys, normalization, structured query language, and transactions",
+      "time": "00:04",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 2,
+      "text": "These ideas help applications or information correctly and retrieve it efficiently.",
+      "time": "00:04",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 3,
+      "text": "A database is an organized collection of related data",
+      "time": "00:08",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 4,
+      "text": "For example, a university may store student details, course information, faculty records,. and examination results in a database",
+      "time": "00:08",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 5,
+      "text": "A database management system is software used to create, read, update, and manage data.",
+      "time": "00:12",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 6,
+      "text": "And DBMS includes MySQL, PostgreSQL, and Oracle database",
+      "time": "00:16",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 7,
+      "text": "The database contains the data, the management system provides tools and rules for working with it.",
+      "time": "00:16",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 8,
+      "text": "In a relational database, information is arranged in tables",
+      "time": "00:20",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 9,
+      "text": "A table contains rows and columns",
+      "time": "00:20",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 10,
+      "text": "Each row represents one record, and each column represents an attribute.",
+      "time": "00:20",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 11,
+      "text": "A student table might contain student ID, name, email address, and department ID",
+      "time": "00:24",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 12,
+      "text": "The table schema describes its columns and the kinds of values they can store.",
+      "time": "00:24",
+      "heading": null,
+      "excluded": null,
+      "topic": 0
+    },
+    {
+      "sentence": 13,
+      "text": "Keys help identify records and connect tables",
+      "time": "00:28",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 14,
+      "text": "A primary key uniquely identifies each row",
+      "time": "00:28",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 15,
+      "text": "It must be unique and cannot be held.",
+      "time": "00:28",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 16,
+      "text": "A foreign key refers to a key in another table, creating a relationship between the two tables",
+      "time": "00:32",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 17,
+      "text": "For example, department ID in the student table can reference department ID in a department table.",
+      "time": "00:32",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 18,
+      "text": "This connection helps maintain referential integrity",
+      "time": "00:36",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 19,
+      "text": "A candidate key is a minimal set of attributes that can uniquely identify a record.",
+      "time": "00:36",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 20,
+      "text": "One candidate key is chosen as the primary key",
+      "time": "00:40",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 21,
+      "text": "Other candidate keys are called alternate keys",
+      "time": "00:40",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 22,
+      "text": "A composite key uses two or more columns together.",
+      "time": "00:40",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 23,
+      "text": "In an enrollment table, student ID, and course ID may form a composite key",
+      "time": "00:44",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 24,
+      "text": "Because a student can enroll in many courses, and a course can have many students.",
+      "time": "00:44",
+      "heading": null,
+      "excluded": null,
+      "topic": 1
+    },
+    {
+      "sentence": 25,
+      "text": "Next, let us discuss normalization",
+      "time": "00:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 26,
+      "text": "Normalization organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies.",
+      "time": "00:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 27,
+      "text": "First normal form requires each field to contain a single value rather than repeating list",
+      "time": "00:52",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 28,
+      "text": "Second normal form requires first normal form. and removes partial dependencies on part of a composite candidate key",
+      "time": "00:52",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 29,
+      "text": "Third normal form requires second normal form, and removes transitive dependencies of non-key attributes.",
+      "time": "00:56",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 30,
+      "text": "For instance, instead of repeating a department name for every student, store departments in a separate department table. and reference it using department ID",
+      "time": "01:00",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 31,
+      "text": "This reduces duplicated data, and makes updates more consistent",
+      "time": "01:04",
+      "heading": null,
+      "excluded": null,
+      "topic": 2
+    },
+    {
+      "sentence": 32,
+      "text": "When related information is needed from separate tables, SQL joins can combine the matching rows.",
+      "time": "01:04",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 33,
+      "text": "Structured query language, or SQL is used to query and modify relational data",
+      "time": "01:08",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 34,
+      "text": "The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records.",
+      "time": "01:08",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 35,
+      "text": "Where clause filters rows according to a condition, while ORDER BY sort the results",
+      "time": "01:12",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 36,
+      "text": "An inner join returns rows with matching values in both tables.",
+      "time": "01:12",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 37,
+      "text": "A left join returns every row from the left table, and includes matching information from the right table when available.",
+      "time": "01:16",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 38,
+      "text": "Joins commonly use primary key and foreign key relationships",
+      "time": "01:20",
+      "heading": null,
+      "excluded": null,
+      "topic": 3
+    },
+    {
+      "sentence": 39,
+      "text": "A transaction is a logical unit of database work.",
+      "time": "01:20",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 40,
+      "text": "Imagine transferring money between two bank accounts",
+      "time": "01:24",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 41,
+      "text": "One operation subtracts money from the sender, and another adds it to the receiver.",
+      "time": "01:24",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 42,
+      "text": "If only one operation succeeds, the records become inconsistent",
+      "time": "01:28",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 43,
+      "text": "A transaction groups these operations so they can be handled together.",
+      "time": "01:28",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 44,
+      "text": "Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability",
+      "time": "01:32",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 45,
+      "text": "Atomicity means all operations in the transaction happen, or none of them do.",
+      "time": "01:32",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 46,
+      "text": "Consistency means the transaction preserves database rules and constraints.",
+      "time": "01:36",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 47,
+      "text": "Isolation controls how concurrent transactions affect one another.",
+      "time": "01:36",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 48,
+      "text": "Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees.",
+      "time": "01:36",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 49,
+      "text": "Commit confirms a transaction, while rollback cancels uncommitted changes",
+      "time": "01:40",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 50,
+      "text": "Database systems also use locks and other concurrency control techniques.",
+      "time": "01:40",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 51,
+      "text": "To coordinate simultaneous access and protect shared data",
+      "time": "01:44",
+      "heading": null,
+      "excluded": null,
+      "topic": 4
+    },
+    {
+      "sentence": 52,
+      "text": "To summarize, a database stores organized information",
+      "time": "01:44",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 53,
+      "text": "A database management system controls access to it.",
+      "time": "01:44",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 54,
+      "text": "Relational tables organize records.",
+      "time": "01:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 55,
+      "text": "Keys connect related tables",
+      "time": "01:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 56,
+      "text": "Normalization reduces redundancy, SQL queries and changes data",
+      "time": "01:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 57,
+      "text": "And transactions protect reliable updates.",
+      "time": "01:48",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 58,
+      "text": "These concepts work together",
+      "time": "01:52",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 59,
+      "text": "Good table design makes data consistent",
+      "time": "01:52",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 60,
+      "text": "Keys establish relationships, joins retrieve related information, and transaction properties help.",
+      "time": "01:52",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    },
+    {
+      "sentence": 61,
+      "text": "Preserve correctness when failures or concurrent operations occur.",
+      "time": "01:56",
+      "heading": null,
+      "excluded": null,
+      "topic": 5
+    }
+  ],
+  "raw_transcript": "Hello everyone. In this lecture, we will learn the fundamentals of a database management system, often abbreviated as dbms. We will cover databases, relational tables, keys, normalization, structured query language, and transactions These ideas help applications or information correctly and retrieve it efficiently. A database is an organized collection of related data For example, a university may store student details, course information, faculty records,. and elimination results in a database A database management system is software used to create, read, update, and manage data. And mammals include mySQL, postcurSQL, and Oracle database The database contains the data, the management system provides tools and rules for working with it. In a relational database, information is arranged in tables A table contains rows and columns Each row represents one record, and each column represents an attribute. A student table might contain student ID, name, email address, and department ID The table schema describes its columns and the kinds of values they can store. keys help identify records and connect tables A primary key uniquely identifies each row It must be unique and cannot be held. A foreign key refers to a key in another table, creating a relationship between the two tables For example, department ID in the student table can reference department ID in a department table. This connection helps maintain referential integrity A candidate key is a minimal set of attributes that can uniquely identify a record. One candidate key is chosen as the primary key Other candidate keys are called alternate keys A composite key uses two or more columns together. In an enrollment table, student ID, and course ID may form a composite key Because a student can enroll in many courses, and a course can have many students. Next, let us discuss normalization Normalization organizes tables to reduce unnecessary duplication and prevent insertion, update, and deletion anomalies. First normal form requires each field to contain a single value rather than repeating list Second normal form requires first normal form. and removes partial dependencies on part of a composite candidate key Third normal form requires second normal form, and removes transitive dependencies of non-key attributes. Unkey, for instance, instead of repeating a department name for every student Store departments in a separate department table. and reference M using department ID This reduces duplicated data, and makes updates more consistent When related information is needed from separate tables, SQL joins can combine the matching rows. Structured query language, or SQL is used to query and modify relational data The select statement retrieves rows, insert adds a record, update changes existing values, and delete removes records. where clause filters rows according to a condition, while ORDER BY sort the results An inner join returns rows with matching values in both tables. A left join returns every row from the left table, and includes matching information from the right table when available. joins commonly use primary key and foreign key relationships A transaction is a logical unit of database work. Imagine transferring money between two bank accounts One operation subtracts money from the sender, and another adds it to the receiver. If only one operation succeeds, the records become inconsistent A transaction groups these operations so they can be handled together. Reliable transactions follow four important properties Atomicity, consistency, isolation, and durability Atomicity means all operations in the transaction happen, or none of them do. Consistency means the transaction preserves database rules, and constraints Isolation controls how concurrent transactions affect one another Durability means that after a transaction commits, its changes persist according to the database's recovery guarantees. Commit confirms a transaction, while rollback cancels and committed changes Database systems also use locks and other concurrency control techniques. To coordinate simultaneous access and protect shared data To summarize, database stores organized information Database management system controls access to it. Relational tables organize records, keys connect related tables Normalization reduces redundancy, SQL queries, and changes data And transactions protect reliable updates. These concepts work together Godtable design makes data consistent Keys establish relationships, joins retrieve related information, and transaction properties help. Preserve correctness when failures or concurrent operations occur."
+}
